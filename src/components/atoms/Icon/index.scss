@@ -1,0 +1,42 @@
+[class^="icon"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-star {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../../images/ico/star.svg");
+}
+
+.icon-forks {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../../images/ico/forks.svg");
+}
+
+.icon-link {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../../images/ico/link.svg");
+}
+
+.icon-location {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../../images/ico/location.svg");
+}
+
+.icon-arrow {
+  width: 14px;
+  height: 7px;
+  background-image: url("../../../images/ico/arrow.svg");
+}
+
+.icon-loading {
+  width: 64px;
+  height: 64px;
+  background-image: url("../../../images/ico/loading.svg");
+}

@@ -1,0 +1,50 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  &-image {
+    width: 100%;
+    object-fit: cover;
+
+    &__wrapper {
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 100%;
+      height: 0;
+      width: 100%;
+      margin-bottom: 30px;
+
+      span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .detail {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & > :first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}

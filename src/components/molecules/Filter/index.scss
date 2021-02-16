@@ -1,0 +1,62 @@
+.filter {
+  $self: &;
+  position: relative;
+
+  &__selected {
+    padding: 10px;
+    padding-right: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 140px;
+    position: relative;
+
+    &-arrow {
+      position: absolute;
+      top: 50%;
+      right: 3px;
+      transform: translateY(-50%) rotate(-180deg);
+      will-change: transform;
+      transition: transform 0.3s ease-out;
+    }
+
+    &--open {
+      #{$self}__selected {
+        &-arrow {
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  &__options {
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(100%);
+    z-index: -1;
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity 0.3s ease-out;
+    background-color: white;
+
+    &--open {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+
+  &__option {
+    border-radius: 5px;
+    padding: 4px 20px 4px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: gray;
+    }
+  }
+}

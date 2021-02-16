@@ -1,0 +1,18 @@
+.contributors {
+  padding: 50px 0;
+
+  &__filter {
+    display: flex;
+    justify-content: flex-end;
+
+    &-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      & > :first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}
